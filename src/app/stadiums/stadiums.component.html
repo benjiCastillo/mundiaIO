@@ -1,0 +1,15 @@
+<div class="container mat-typography">
+  <div class="row">
+    <div class=" col-md-offset-4 col-md-4">
+
+      <mat-card *ngFor="let stadium of stadiums " class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{ stadium.name }}</mat-card-title>
+          <mat-card-subtitle>{{ stadium.city }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{ stadium.image }}" alt="stadium">
+      </mat-card>
+
+    </div>
+  </div>
+</div>

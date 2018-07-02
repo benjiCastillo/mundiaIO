@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="col-md-offset-4 col-md-4">
+    <mat-list *ngFor="let team of teams; let i = index;">
+      <h3 *ngIf="i % 4 == 0;" class="mat-h2">Grupo {{ i / 4 + 1 }} </h3>
+      <mat-list-item>
+        {{ team.emojiString }} {{ team.name }}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </mat-list>
+  </div>
+</div>
