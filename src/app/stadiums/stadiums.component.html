@@ -2,12 +2,12 @@
   <div class="row">
     <div class=" col-md-offset-4 col-md-4">
 
-      <mat-card *ngFor="let stadium of stadiums " class="example-card">
+      <mat-card *ngFor="let stadium of stadiums;let i=index " class="example-card">
         <mat-card-header>
           <mat-card-title>{{ stadium.name }}</mat-card-title>
           <mat-card-subtitle>{{ stadium.city }}</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="{{ stadium.image }}" alt="stadium">
+        <img mat-card-image src="{{ stadium.image }}" alt="stadium" (click)="open(i)">
       </mat-card>
 
     </div>

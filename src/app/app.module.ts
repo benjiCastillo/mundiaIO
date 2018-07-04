@@ -10,6 +10,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StadiumsComponent } from './stadiums/stadiums.component';
 import { TeamsComponent } from './teams/teams.component';
+import { LightboxModule } from 'ngx-lightbox';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { TeamsComponent } from './teams/teams.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LightboxModule
   ],
   providers: [MundialService],
   bootstrap: [AppComponent]
